@@ -1,0 +1,5 @@
+Index = List of all available list
+Anime list = anime.html/css/js
+TV Shows = tvshows.html/css/js
+
+Favicon = make favicon
