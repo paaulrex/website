@@ -7,13 +7,30 @@ html {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    border: 5px solid black;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.ctnr-title {
+    flex-basis: 100%;
 }
 
 .sub-ctnr {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    width: auto;
+    text-align: center;
+    background-color: #EEF0F4;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
