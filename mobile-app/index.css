@@ -9,10 +9,10 @@ html, body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 480px;
+    max-width: 400px;
     margin: 30px auto;
     gap: 15px;
-    width: auto;
+    justify-content: center;
 }
 
 .con-items {
