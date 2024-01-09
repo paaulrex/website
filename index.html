@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Paul De Silos Portfolio</title>
+    <title>Paul De Silos</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Paul De Silos' Portfolio</h1>
-        <p>All webpages found within this website are for portfolio use only, they are mostly fake.</p>
-        <p>It is where I publish all of my worked projects</p>
-    </div>
-    <div class="projects">
-        <div class="ctnr-title">
+    <header>
+        <div class="container">
+            <h1>Paul De Silos</h1>
+            <p>Front-End Developer</p>
+        </div>
+    </header>
+
+    <section id="top-info">
+        <div class="container">
+            <h1>Hello 👋🏽</h1>
+            <p>Welcome to my portfolio! My name is Paul. Below is where you will see my ongoing projects</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
             <h2>Projects</h2>
-        </div>  
-        <div class="sub-ctnr">
-            <a href="mobile-app/index.html">
-                <img src="mob-phone.png">
-                <p>Mobile web app</p>
-            </a>
+            <div class="sub-container">
+                <div class="project-list">
+                    <a href="mobile-app/index.html">
+                        <img src="mob-phone.png">
+                        <p>List app (Mobile friendly web app)</p>
+                    </a>
+                </div>  
+                <div class="project-list">
+                    <a href="blackjack/blackjack.html">
+                        <img src="blackjack.png">
+                        <p>Blackjack (Mobile friendly)</p>
+                    </a> 
+                </div>
+            </div>
         </div>
-        <div class="sub-ctnr">
-            <a href="blackjack/blackjack.html">
-                <img src="blackjack.png">
-                <p>Blackjack (Mobile friendly)</p>
-            </a>   
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hello!, My name is Paul De Silos and I have been programming HTML since 2007,
+                during MySpace and then towards Tumblr days. I have stopped using HTML until 2023 
+                (when I am in the process of separating from Active Duty). I am now in the process 
+                in learning more about HTML:5, CSS, and JavaScript. I have been doing a lot of 
+                programming since I started my transition out of the Military and I am hoping 
+                to become a full time developer once I join the civilian workforce.<br><br>
+                I am also in the process in learning more about Python programming.  <br><br>
+                If you would like to see more of my programming, please visit my 
+                <a href="https://github.com/paaulrex"><b><u>GitHub</u></b></a>.
+            </p>
         </div>
-    </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Database Management
+                    <ul>
+                        <li>SnowFlake</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <!-- Include a contact form or your email and social media links -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Paul De Silos - Front-End Developer</p>
+        </div>
+    </footer>
+
 </body>
 </html>
