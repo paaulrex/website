@@ -68,7 +68,8 @@ a {
 }
 
 #scoreboard-pic {
-    width: 950px;
+    max-width: 100%;
+    min-width: 300px;
 }
 
 footer {
