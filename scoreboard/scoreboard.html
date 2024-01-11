@@ -4,6 +4,7 @@
     <!-- Background img is found in https://www.icegif.com/kobe-bryant-43/ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" type="text/css" href="scoreboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,35 +16,63 @@
     <div class="container">
         <div class="sub-container">
             <h3>HOME</h3>
+
+            <!-- Score display -->
             <div class="scores">
                 <h2 id="home-pts">0</h2>
             </div>
+
+            <!-- Button for points -->
             <div class="button-pts">
                 <button onclick="plus1Home()">+1</button>
                 <button onclick="plus2Home()">+2</button>
                 <button onclick="plus3Home()">+3</button>
             </div>
+
+            <!-- Foul counter -->
+            <div class="foul-counter">
+                <p class="foul-name">Foul:  </p>
+                <span id="dot" class="hof1"></span>
+                <span id="dot" class="hof2"></span>
+                <span id="dot" class="hof3"></span>
+                <span id="dot" class="hof4"></span> 
+            </div>
         </div>
 
-        <!-- Middle section that (will) contain reset, quarter, timer, etc -->
+        <!-- Middle section that (will) contain quarter, timer, etc -->
         <div class="middle-container">
+            <button onclick="foulHome()">< Foul</button>
             <button onclick="resetPts()">Reset</button>
+            <button onclick="foulAway()">Foul ></button>
         </div>
 
         <div class="sub-container">
             <h3>AWAY</h3>
+
+            <!-- Score display -->
             <div class="scores">
                 <h2 id="away-pts">0</h2>
             </div>
+
+            <!-- Button for points -->
             <div class="button-pts">
                 <button onclick="plus1Away()">+1</button>
                 <button onclick="plus2Away()">+2</button>
                 <button onclick="plus3Away()">+3</button>
             </div>
+
+            <!-- Foul counter -->
+            <div class="foul-counter">
+                <p class="foul-name">Foul:  </p>
+                <span id="dot" class="awf1"></span>
+                <span id="dot" class="awf2"></span>
+                <span id="dot" class="awf3"></span>
+                <span id="dot" class="awf4"></span> 
+            </div>
         </div>
     </div>
-    <script src="scoreboard.js"></script>
 
+    <script src="scoreboard.js"></script>
     <footer>
         <div>
             <p>&copy; 2024 Paul De Silos - Front-End Developer</p>
