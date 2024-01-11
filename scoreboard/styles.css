@@ -80,6 +80,7 @@ button {
     width: 25px;
     border-radius: 50%;
     border: 2px solid purple;
+    color: transparent;
 }
 
 .foul-counter, .dot {
