@@ -78,7 +78,7 @@ button {
 h3 {
     color: #CCC1FF;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 100% */
@@ -89,7 +89,7 @@ p {
     text-align: center;
 
     /* text-sm/leading-5/font-normal */
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
