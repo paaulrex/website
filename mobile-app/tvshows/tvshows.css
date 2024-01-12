@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #EEF0F4;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img  {
+    width: 150px;
+    border-radius: 80px;
+    border: 5px solid #8b0000;
+}
+
+.container > img {
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+input {
+    color: #432000;
+    background-color: #dce1eb;
+    border: 0;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 15px 0;
+}
+
+button {
+    color: #fdfdfd;
+    background-color: #8b0000;
+    border: 0;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#home-btn {
+    width: 100%;
+}
+
+#tv-shows-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+#tv-shows-list li {
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 6px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#tv-shows-list > li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-item {
+    border: 2px solid black;
+    padding: 0 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown > li {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.dropdown > li:hover, .nav-list > li:hover {
+    background-color: none  ;
+}
+
+.dropdown-item a {
+    height: 100%;
+    float: left;
+    user-select: none;
+}
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.dropdown-item > a {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.dropdown-item > a:hover {
+    background-color: #432000;
+    color: white;
+}
+
+.nav-item {
+    background-color: #8b0000;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: #fff;
+}

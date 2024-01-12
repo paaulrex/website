@@ -1,0 +1,144 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background: linear-gradient(rgb(86, 86, 86), grey);
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border: 3px solid #000;
+    background-color: #690000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    border: 3px solid #000;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #f1f1f1;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#projects .container h2 {
+    flex-basis: 100%;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-list {
+    border: 3px dotted #000;
+    background-color: #e1e1e1;
+}
+
+section h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#scoreboard-pic {
+    max-width: 100%;
+    min-width: 300px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border: 3px solid #000;
+    background-color: #690000;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    z-index: 2;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+}
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    border: 2px solid black;
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: darkgrey;
+}

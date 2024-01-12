@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #EEF0F4;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 30px auto;
+    gap: 15px;
+    justify-content: center;
+}
+
+.con-items {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 8px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.app-title {
+    text-align: center;
+    flex-basis: 91%;
+    border: 3px solid #000;
+    background-color: #8b0000;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+p {
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img  {
+    width: 150px;
+    border-radius: 80px;
+    border: 3px solid #000;
+}
+
+button {
+    color: #fdfdfd;
+    background-color: #AC485A;
+    border: 0;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-item {
+    border: 2px solid black;
+    padding: 0 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown > li {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.dropdown > li:hover, .nav-list > li:hover {
+    background-color: none  ;
+}
+
+.dropdown-item a {
+    height: 100%;
+    float: left;
+}
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.dropdown-item > a {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.dropdown-item > a:hover {
+    background-color: #432000;
+    color: white;
+}
+
+.nav-item {
+    background-color: #8b0000;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: #fff;
+}
