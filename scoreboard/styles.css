@@ -3,6 +3,7 @@ body {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 20px;
     user-select: none;
+    /* text-align: center; */
 }
 
 .container {
@@ -109,6 +110,7 @@ button {
     align-items: center;
     margin: 10px;
     gap: 30px;
+    justify-content: center;
 }
 
 .nav-list {
@@ -126,7 +128,6 @@ button {
     position: absolute;
     width: 500px;
     z-index: 2;
-    background: white;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -142,7 +143,17 @@ button {
     pointer-events: auto;
     padding: 0;
     gap: 5px;
+}
+
+.dropdown-item {
     border: 2px solid black;
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: darkgrey;
 }
 
 a {
