@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="tvshows.css">
+    <link rel="stylesheet" type="text/css" href="conversion.css">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
-    <title>TV Show List</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>Unit Conversion</title>
 </head>
 <body>
     <nav class="navbar">
@@ -37,16 +40,32 @@
       </nav>
 
     <div class="container">
-        <a href="/mobile-app/">
-            <button id="home-btn">List Home</button>
-        </a>
-        <img src="tv.png">
-        <input type="text" id="input-fld" placeholder="Grey's Anatomy">
-        <button id="add-btn">Add to List</button>
-        <script src="tvshows.js" type="module"></script>
-        <ul id="tv-shows-list">
-
-        </ul>
+        <div class="header-container">
+            <h1>Metric-to-Imperial Unit Conversion</h1>
+            <input type="text" placeholder="0">
+            <button class="convert" onclick="convertUnit()">Convert</button>
+        </div>
+        <div class="sub-container">
+            <div class="conv-items">
+                <h3>Length (m/ft)</h3>
+                <p class="length-conv"></p>
+            </div>
+            <div class="conv-items">
+                <h3>Volume (l/gal)</h3>
+                <p class="volume-conv"></p>
+            </div>
+            <div class="conv-items">
+                <h3>Mass (kg/lbs)</h3>
+                <p class="mass-conv"></p>
+            </div>
+        </div>
     </div>
+    <script src="conversion.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Paul De Silos - Front-End Developer</p>
+        </div>
+    </footer>
 </body>
 </html>
