@@ -111,7 +111,6 @@ footer {
 }
 
 .dropdown {
-    opacity: 0;
     position: absolute;
     width: 500px;
     z-index: 2;
@@ -119,6 +118,7 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: column;
+    visibility: hidden;
 }
 
 .dropdown-item a {
@@ -127,7 +127,7 @@ footer {
 }
 
 .has-dropdown:focus-within .dropdown   {
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     padding: 0;
     gap: 5px;
