@@ -1,0 +1,187 @@
+/* Navbar CSS start */
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    z-index: 2;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+}
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    width: 30%;
+}
+
+.dropdown-item > a:hover {
+    background-color: darkgrey;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-item > a {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.dropdown > li:hover, .nav-list > li:hover {
+    background-color: none  ;
+}
+/* Navbar CSS stop */
+
+/* main body CSS start */
+html {
+    font-family: 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: #1B1924;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-icon {
+    width: 90px;
+    height: 90px;
+}
+
+.user-msg {
+    width: 350px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #444059;
+    color: #8F8F8F;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-wrap: wrap;
+    resize: none;;
+}
+
+.user-msg, .user-from, .user-to, .post-msg {
+    border: none;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.user-from, .user-to {
+    width: 168px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #444059;
+    color: #8F8F8F;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.post-msg {
+    width: 350px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #28A9F1;
+    color: #04131C;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.prev-post {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.post-items {
+    list-style: none;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 310px;
+}
+
+.post-items > li:first-child, .post-items > li:last-child {
+    color: #1B1924;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.post-items > li:nth-child(2) {
+    color: #1B1924;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* main body CSS stop */
