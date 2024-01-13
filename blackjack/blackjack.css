@@ -68,7 +68,7 @@ button {
 }
 
 .dropdown {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     width: 500px;
     z-index: 2;
@@ -84,7 +84,7 @@ button {
 }
 
 .has-dropdown:focus-within .dropdown   {
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     padding: 0;
     gap: 5px;

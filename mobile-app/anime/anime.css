@@ -79,6 +79,8 @@ button:hover {
     cursor: pointer;
 }
 
+
+/* Navbar CSS start */
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -115,7 +117,7 @@ button:hover {
 }
 
 .dropdown {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     width: 500px;
     background: white;
@@ -141,7 +143,7 @@ button:hover {
 }
 
 .has-dropdown:focus-within .dropdown   {
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     padding: 0;
     gap: 5px;
@@ -157,7 +159,6 @@ button:hover {
     color: black;
 }
 
-
 .dropdown-item > a:hover {
     background-color: #432000;
     color: white;
@@ -171,3 +172,4 @@ button:hover {
     text-decoration: none;
     color: #fff;
 }
+/* Navbar CSS ends */
