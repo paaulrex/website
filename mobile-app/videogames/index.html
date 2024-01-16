@@ -8,39 +8,20 @@
     <link rel="stylesheet" type="text/css" href="videogames.css">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
     <title>Video Games List</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-items">
-            <img class="navbar-icon" src="/favicon.png">
-            <ul class="nav-list">   
-                <li class="nav-item"><a href="/">Home</a></li>
-                <li class="nav-item has-dropdown">
-                    <a href="#">Projects ▼</a>
-                    <ul class="dropdown">
-                        <li class="dropdown-item">
-                            <a href="/scoreboard">Scoreboard</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="/mobile-app">Mobile Web App</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="/blackjack">Blackjack</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="/unit-conversion/">Convert Units</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="/post-something/">Post Something</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="/password-generator/">Password Generator</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>   
+    <header>
+        <div id="nav-placeholder">
+
         </div>
-      </nav>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("/nav/nav.html");
+        });
+        </script>
+    </header>
 
     <div class="container">
         <a href="/mobile-app/">
