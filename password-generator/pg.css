@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: #1F2937;
+}
+
+/* Navbar CSS Start */
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.dropdown {
+    position: absolute;
+    width: 500px;
+    z-index: 2;
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+}
+
+.has-dropdown:focus-within .dropdown   {
+    visibility: visible;
+    pointer-events: auto;
+    padding: 0;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    border: 2px solid black;
+    width: 30%;
+    background-color: #1F2937;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* Navbar CSS Stops */
+
+.container {
+    display: block;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    align-items: center;
+    margin: auto;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.title-container > p {
+    padding: 0;
+    margin: 0;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.title-container > p:nth-child(2) {
+    background: linear-gradient(to right, cyan, green, yellow, red, purple);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.selection-container {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 6px;
+    background: #10B981;
+    display: inline-flex;
+    padding: 9px 17px 9px 15px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 0;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.pwd-length-container > input, .pwd-length-container > p{
+    margin: 0 20px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.line-break {
+    border: 1px solid #2F3E53;
+    margin: 20px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.sub-container > button {
+    width: 220px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #273549;
+    color: #10B981; 
+    font-size: 14px;
+}
+
+.copied-tooltip {
+    display: none;
+    margin-left: 40px;
+    padding: 5px 12px;
+    background-color: #000000df;
+    border-radius: 4px;
+    color: #fff;
+}
