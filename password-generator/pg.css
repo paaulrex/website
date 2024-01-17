@@ -75,7 +75,7 @@ a {
 }
 /* Navbar CSS Stops */
 
-.container {
+section {
     display: block;
     width: 500px;
     height: 500px;
@@ -107,8 +107,22 @@ a {
 .selection-container {
     display: flex;
     flex: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.addtl-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 button {
@@ -126,7 +140,6 @@ button {
     color: white;
     font-size: 18px;
 }
-
 
 .pwd-length-container > input, .pwd-length-container > p{
     margin: 0 20px;
@@ -163,4 +176,10 @@ button {
     background-color: #000000df;
     border-radius: 4px;
     color: #fff;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
 }

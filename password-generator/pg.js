@@ -25,14 +25,27 @@ const pwdOne = document.querySelector('.pwd1')
 const pwdTwo = document.querySelector('.pwd2')
 const pwdLengthText = document.querySelector('#pwd-length-value')
 const pwdLength = document.querySelector('#pwd-length')
+const noNumbers = document.querySelector('#no-numbers')
+const noSymbols = document.querySelector('#no-symbols')
 
 pwdLength.addEventListener("input", (event) => {
     pwdLengthText.textContent = event.target.value;
 })
 
 function getRandomCharacter() {
-    let randomChar = Math.floor(Math.random() * allCharacters.length)
-    return allCharacters[randomChar]
+    if (noNumbers.checked && noSymbols.checked) {
+        let randomChar = Math.floor(Math.random() * lettersOnlyCharacters.length)
+        return lettersOnlyCharacters[randomChar]
+    } else if (noNumbers.checked) {
+        let randomChar = Math.floor(Math.random() * noNumberCharacters.length)
+        return noNumberCharacters[randomChar]
+    } else if (noSymbols.checked) {
+        let randomChar = Math.floor(Math.random() * noSymbolCharacters.length)
+        return noSymbolCharacters[randomChar]
+    }  else {
+        let randomChar = Math.floor(Math.random() * allCharacters.length)
+        return allCharacters[randomChar]
+    }
 }
 
 function generatePassword() {
@@ -52,7 +65,7 @@ pwdOne.addEventListener('click', function() {
 
     let copiedMsg = document.querySelector(".copied-tooltip")
     copiedMsg.style.display = "inline";
-    copiedMsg.textContent = "< Successfully Copied Password"
+    copiedMsg.textContent = "^ Successfully Copied Password"
     setTimeout( function() {
         copiedMsg.style.display = "none";
     }, 3000);
@@ -64,7 +77,7 @@ pwdTwo.addEventListener('click', function() {
 
     let copiedMsg = document.querySelector(".copied-tooltip")
     copiedMsg.style.display = "inline";
-    copiedMsg.textContent = "Successfully Copied Password >"
+    copiedMsg.textContent = "Successfully Copied Password ^"
     setTimeout( function() {
         copiedMsg.style.display = "none";
     }, 3000);
