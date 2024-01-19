@@ -8,7 +8,7 @@ const aboutMeSection = document.querySelector('.about-me')
 function showMore() {
     mainShow.style.display = "none"
     aboutMeSection.style.display = "block"
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.innerwidth < 800 ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerwidth < 800) {
         const footer = document.querySelector('footer')
         footer.style.position = "relative"
     } else {
@@ -19,12 +19,16 @@ function showMore() {
 function backToMain() {
     mainShow.style.display = "flex"
     aboutMeSection.style.display = "none"
-    const footer = document.querySelector('footer')
-    footer.style.position = "absolute"
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerwidth < 800) {
+        const footer = document.querySelector('footer')
+        footer.style.position = "absolute"
+    } else {
+
+    }
 }
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    
+
 } else {
     showAboutMe.onmouseover = function() {
         showAboutMe.innerHTML = "About Me"
