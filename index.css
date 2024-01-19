@@ -112,6 +112,7 @@ a {
     }
 
     .mobile-view-text {
+        visibility: visible;
         color: gray;
         font-size: 18px;
     }
@@ -141,11 +142,21 @@ a {
     section {
 
     }
+
+    #p4 {
+        color: whitesmoke;
+    }
     
     .main-section {
         margin: 0 50px;
         padding: 0;
         width: auto;
+    }
+
+    .mobile-view-text {
+        visibility: visible;
+        color: gray;
+        font-size: 18px;
     }
 
     .about-me {
@@ -154,7 +165,54 @@ a {
         width: auto;
     }
 
-    header, footer {
+    header {
         position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+
+    }
+
+    #p4 {
+        color: whitesmoke;
+    }
+    
+    .main-section {
+        margin: 0 50px;
+        padding: 0;
+        width: auto;
+    }
+
+    .mobile-view-text {
+        visibility: visible;
+        color: gray;
+        font-size: 18px;
+    }
+
+    .about-me {
+        margin: 0px 50px;
+        padding: 0;
+        width: auto;
+    }
+
+    header {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
     }
 }
