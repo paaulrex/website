@@ -1,9 +1,10 @@
 body {
-    background-color: gray;
+    background-color: #1f1f1f;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 20px;
     user-select: none;
     text-align: center;
+    color: whitesmoke;
 }
 
 .container {
@@ -95,6 +96,8 @@ button {
     font-weight: bold;
 }
 
+/* Nav CSS start*/
+
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -107,10 +110,18 @@ button {
 .navbar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 10px;
     gap: 30px;
     justify-content: center;
+}
+
+.navbar-items > a {
+    text-decoration: none;
+    color: purple;
+    border: 2px solid purple;
+    background-color: rgb(255, 191, 28);
+    padding: 0 20px;
 }
 
 .nav-list {
@@ -123,40 +134,4 @@ button {
     gap: 30px;
 }
 
-.dropdown {
-    visibility: hidden;
-    position: absolute;
-    width: 500px;
-    z-index: 2;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-item a {
-    width: 100%;
-    height: 100%;
-}
-
-.has-dropdown:focus-within .dropdown   {
-    visibility: visible;
-    pointer-events: auto;
-    padding: 0;
-    gap: 5px;
-}
-
-.dropdown-item {
-    border: 2px solid black;
-    width: 30%;
-    background-color: white;
-    padding: 10px;
-}
-
-.dropdown-item:hover {
-    background-color: darkgrey;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
+/* Nav CSS stop */

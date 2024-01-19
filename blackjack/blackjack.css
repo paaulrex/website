@@ -32,6 +32,8 @@ button {
     margin: 2px;
 }
 
+/* Nav CSS start*/
+
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -39,22 +41,20 @@ button {
 
 .navbar {
     width: 100%;
-    font-weight: bolder;
 }
 
 .navbar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 10px;
     gap: 30px;
     justify-content: center;
 }
 
-.nav-item {
-    border: 2px solid black;
-    background-image: linear-gradient(darkgrey, goldenrod);
-    padding: 0 20px;
+.navbar-items > a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .nav-list {
@@ -67,43 +67,4 @@ button {
     gap: 30px;
 }
 
-.dropdown {
-    visibility: hidden;
-    position: absolute;
-    width: 500px;
-    z-index: 2;
-    background: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-item a {
-    height: 100%;
-    float: left;
-}
-
-.has-dropdown:focus-within .dropdown   {
-    visibility: visible;
-    pointer-events: auto;
-    padding: 0;
-    gap: 5px;
-    background-color: transparent;
-}
-
-.dropdown-item {
-    border: 2px solid black;
-    width: 30%;
-    background-color: white;
-    padding: 10px;
-    background-image: linear-gradient(darkgrey, goldenrod);
-}
-
-.dropdown-item:hover {
-    background-color: #016f32;
-}
-
-a {
-    text-decoration: none;
-    color: #016f32;
-}
+/* Nav CSS stop */

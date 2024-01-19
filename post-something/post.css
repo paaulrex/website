@@ -1,4 +1,5 @@
-/* Navbar CSS start */
+/* Nav CSS start*/
+
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -11,10 +12,15 @@
 .navbar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 10px;
     gap: 30px;
     justify-content: center;
+}
+
+.navbar-items > a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .nav-list {
@@ -27,57 +33,7 @@
     gap: 30px;
 }
 
-.dropdown {
-    visibility: hidden;
-    position: absolute;
-    width: 500px;
-    z-index: 2;
-    background: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-item a {
-    width: 100%;
-    height: 100%;
-}
-
-.has-dropdown:focus-within .dropdown   {
-    visibility: visible;
-    pointer-events: auto;
-    padding: 0;
-    gap: 5px;
-    background-color: transparent;
-}
-
-.dropdown-item {
-    width: 30%;
-}
-
-.dropdown-item > a:hover {
-    background-color: darkgrey;
-}
-
-.nav-item > a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.dropdown-item > a {
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    float: left;
-}
-
-.dropdown > li:hover, .nav-list > li:hover {
-    background-color: none  ;
-}
-/* Navbar CSS stop */
+/* Nav CSS stop */
 
 /* main body CSS start */
 html {
@@ -185,3 +141,78 @@ html {
 }
 
 /* main body CSS stop */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        width: 96%;
+        margin: auto;
+    }
+
+    h1 {
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+
+    header, footer {
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        width: auto;
+        margin-top: 50px;
+    }
+    
+    h1 {
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+
+    header, footer {
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        width: auto;
+        margin-top: 50px;
+    }
+    
+    h1 {
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+
+    header, footer {
+        position: relative;
+    }
+}

@@ -95,7 +95,7 @@ p {
     line-height: 20px; /* 142.857% */
 }
 
-/* Nav css */
+/* Nav CSS start*/
 
 .navbar-icon {
     width: 30px;
@@ -109,10 +109,15 @@ p {
 .navbar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 10px;
     gap: 30px;
     justify-content: center;
+}
+
+.navbar-items > a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .nav-list {
@@ -124,6 +129,10 @@ p {
     height: 100%;
     gap: 30px;
 }
+
+/* Nav CSS stop */
+
+/* Template for later use, if I decide to reuse ul/li for dropdown
 
 .dropdown {
     visibility: hidden;
@@ -173,5 +182,76 @@ p {
 }
 
 .dropdown > li:hover, .nav-list > li:hover {
-    background-color: none  ;
+    background-color: none  ; 
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 96%;
+        margin: auto;
+    }
+
+    h1 {
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+    
+    .header-container {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .sub-container{
+        width: 100%;
+    }
+    
+    .conv-items {
+        width: 90%;
+    }
+
+    header, footer {
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: auto;
+    }
+    
+    h1 {
+        padding: 0;
+        margin: 25px 0 10px 0;
+    }
+    
+    .header-container {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .sub-container{
+        width: 100%;
+    }
+    
+    .conv-items {
+        width: 90%;
+    }
+
+    header, footer {
+        position: relative;
+    }
+
+    header, footer {
+        position: relative;
+    }
 }

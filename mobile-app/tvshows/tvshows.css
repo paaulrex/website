@@ -79,6 +79,8 @@ button:hover {
     cursor: pointer;
 }
 
+/* Nav CSS start*/
+
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -97,11 +99,11 @@ button:hover {
     justify-content: center;
 }
 
-.nav-item {
-    border: 2px solid black;
-    padding: 0 20px;
-    border-radius: 5px;
-    padding: 10px;
+.navbar-items > a {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bolder;
+    font-size: 1.3em;
 }
 
 .nav-list {
@@ -114,60 +116,4 @@ button:hover {
     gap: 30px;
 }
 
-.dropdown {
-    visibility: hidden;
-    position: absolute;
-    width: 500px;
-    background: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown > li {
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
-}
-
-.dropdown > li:hover, .nav-list > li:hover {
-    background-color: none  ;
-}
-
-.dropdown-item a {
-    height: 100%;
-    float: left;
-    user-select: none;
-}
-
-.has-dropdown:focus-within .dropdown   {
-    visibility: visible;
-    pointer-events: auto;
-    padding: 0;
-    gap: 5px;
-    background-color: transparent;
-}
-
-.dropdown-item > a {
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-
-.dropdown-item > a:hover {
-    background-color: #432000;
-    color: white;
-}
-
-.nav-item {
-    background-color: #8b0000;
-}
-
-.nav-item > a {
-    text-decoration: none;
-    color: #fff;
-}
+/* Nav CSS stop */

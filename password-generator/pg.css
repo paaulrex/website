@@ -5,7 +5,8 @@ body {
     background: #1F2937;
 }
 
-/* Navbar CSS Start */
+/* Nav CSS start*/
+
 .navbar-icon {
     width: 30px;
     height: 30px;
@@ -18,10 +19,15 @@ body {
 .navbar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     margin: 10px;
     gap: 30px;
     justify-content: center;
+}
+
+.navbar-items > a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .nav-list {
@@ -34,46 +40,7 @@ body {
     gap: 30px;
 }
 
-.dropdown {
-    position: absolute;
-    width: 500px;
-    z-index: 2;
-    background: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-}
-
-.dropdown-item a {
-    width: 100%;
-    height: 100%;
-}
-
-.has-dropdown:focus-within .dropdown   {
-    visibility: visible;
-    pointer-events: auto;
-    padding: 0;
-    gap: 5px;
-    background-color: transparent;
-}
-
-.dropdown-item {
-    border: 2px solid black;
-    width: 30%;
-    background-color: #1F2937;
-    padding: 10px;
-}
-
-.dropdown-item:hover {
-    background-color: darkgrey;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-/* Navbar CSS Stops */
+/* Nav CSS stop */
 
 section {
     display: block;
@@ -182,4 +149,170 @@ button {
 footer {
     text-align: center;
     font-size: 14px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    html, body {
+        width: 98%;
+        margin: auto;
+        padding: 0;
+    }
+
+    main {
+        width: 98%;
+        padding: 0;
+        margin: auto;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+
+    section {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .title-container {
+        width: 96%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .title-container > p {
+        font-size: 32px;
+    }
+
+    .selection-container {
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    button {
+        margin: 20px auto;
+        width: 96%;
+    }
+
+    .pwd-length-container > input, .pwd-length-container > p{
+        margin: 5px auto;
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .line-break {
+        width: 98%;
+        margin: 30px auto;
+    }
+
+    .sub-container > button {
+        width: 96%;
+        margin: auto;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #273549;
+        color: #10B981; 
+        font-size: 14px;
+    }
+
+    .sub-container {
+        flex-direction: column;
+        width: 96%;
+        margin: auto;
+        gap: 30px;
+    }
+
+    .copied-tooltip {
+        margin: 20px auto;
+    }
+
+    header, footer {
+        position: relative;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    html, body {
+        width: 98%;
+        margin: auto;
+        padding: 0;
+    }
+
+    main {
+        width: 98%;
+        padding: 0;
+        margin: auto;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+
+    section {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .title-container {
+        width: 96%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .title-container > p {
+        font-size: 34px;
+    }
+
+    .selection-container {
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    button {
+        margin: 20px auto;
+        width: 96%;
+        align-content: center;
+    }
+
+    .pwd-length-container > input, .pwd-length-container > p {
+        margin: 0 20px;
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .line-break {
+        width: 98%;
+        margin: 20px auto;
+    }
+
+    .sub-container > button {
+        width: 96%;
+        margin: auto;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: #273549;
+        color: #10B981; 
+        font-size: 14px;
+    }
+
+    .sub-container {
+        flex-direction: column;
+        width: 96%;
+        margin: auto;
+        gap: 30px;
+    }
+
+    header, footer {
+        position: relative;
+        width: auto;
+    }
 }
