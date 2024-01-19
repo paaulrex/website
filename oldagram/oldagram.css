@@ -137,32 +137,28 @@ footer {
         margin: 0;
         padding: 0;
         user-select: none;
+        width: auto;
+    }
+    
+    header {
+        width: auto;
     }
 
     section {
-
-    }
-    
-    .main-section {
-        margin: 0 50px;
-        padding: 0;
         width: auto;
     }
 
-    .mobile-view-text {
-        visibility: visible;
-        color: gray;
-        font-size: 18px;
-    }
-
-    .about-me {
-        margin: 0px 50px;
-        padding: 0;
+    main {
         width: auto;
     }
 
-    header {
-        position: relative;
+    article {
+        width: auto;
+        height: auto;
+    }
+
+    .pic-post {
+        width: 100%;
     }
 
     footer {
@@ -176,32 +172,28 @@ footer {
         margin: 0;
         padding: 0;
         user-select: none;
+        width: auto;
+    }
+    
+    header {
+        width: auto;
     }
 
     section {
-
-    }
-    
-    .main-section {
-        margin: 0 50px;
-        padding: 0;
         width: auto;
     }
 
-    .mobile-view-text {
-        visibility: visible;
-        color: gray;
-        font-size: 18px;
-    }
-
-    .about-me {
-        margin: 0px 50px;
-        padding: 0;
+    main {
         width: auto;
     }
 
-    header {
-        position: relative;
+    article {
+        width: auto;
+        height: auto;
+    }
+
+    .pic-post {
+        width: 100%;
     }
 
     footer {
