@@ -65,7 +65,7 @@ pwdOne.addEventListener('click', function() {
 
     let copiedMsg = document.querySelector(".copied-tooltip")
     copiedMsg.style.display = "inline";
-    copiedMsg.textContent = "^ Successfully Copied Password"
+    copiedMsg.textContent = "Successfully Copied Password"
     setTimeout( function() {
         copiedMsg.style.display = "none";
     }, 3000);
@@ -77,7 +77,7 @@ pwdTwo.addEventListener('click', function() {
 
     let copiedMsg = document.querySelector(".copied-tooltip")
     copiedMsg.style.display = "inline";
-    copiedMsg.textContent = "Successfully Copied Password ^"
+    copiedMsg.textContent = "Successfully Copied Password"
     setTimeout( function() {
         copiedMsg.style.display = "none";
     }, 3000);
