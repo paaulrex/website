@@ -22,10 +22,6 @@ section {
     width: 33%;
 }
 
-.items {
-    font-family: 'Black Ops One', system-ui;
-}
-
 .main-section, .about-me {
     display: flex;
     flex-direction: column;
@@ -49,8 +45,9 @@ a {
     cursor: pointer;
 }
 
-.items > a {
+.main-section > a {
     font-size: 3em;
+    font-family: 'Black Ops One', system-ui;
 }
 
 .mobile-view-text {
