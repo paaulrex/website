@@ -96,15 +96,13 @@ a {
     body {
         margin: 0;
         padding: 0;
+        user-select: none;
     }
 
     section {
 
     }
 
-    #p4 {
-        color: whitesmoke;
-    }
     
     .main-section {
         margin: 0 50px;
@@ -138,14 +136,11 @@ a {
     body {
         margin: 0;
         padding: 0;
+        user-select: none;
     }
 
     section {
 
-    }
-
-    #p4 {
-        color: whitesmoke;
     }
     
     .main-section {
@@ -180,14 +175,11 @@ a {
     body {
         margin: 0;
         padding: 0;
+        user-select: none;
     }
 
     section {
 
-    }
-
-    #p4 {
-        color: whitesmoke;
     }
     
     .main-section {
