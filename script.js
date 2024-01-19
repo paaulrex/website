@@ -10,7 +10,7 @@ showAboutMe.onmouseover = function() {
 }
 
 showAboutMe.onmouseout = function () {
-    showAboutMe.innerHTML = "Hi"
+    showAboutMe.innerHTML = `Hi <span class="mobile-view-text">// About Me</span>`
 }
 
 showGithub.onmouseover = function() {
@@ -18,7 +18,7 @@ showGithub.onmouseover = function() {
 }
 
 showGithub.onmouseout = function() {
-    showGithub.innerHTML = "I'm"
+    showGithub.innerHTML = `I'm <span class="mobile-view-text">// GitHub</span>`
 }
 
 showLinkedIn.onmouseover = function() {
@@ -26,7 +26,7 @@ showLinkedIn.onmouseover = function() {
 }
 
 showLinkedIn.onmouseout = function() {
-    showLinkedIn.innerHTML = "Paul"
+    showLinkedIn.innerHTML = `Paul <span class="mobile-view-text">// LinkedIn</span>`
 }
 
 showFootnote.onmouseover = function() {
@@ -35,7 +35,7 @@ showFootnote.onmouseover = function() {
 }
 
 showFootnote.onmouseout = function() {
-    showFootnote.innerHTML = "-------------------------------------"
+    showFootnote.innerHTML = "---------------------------------"
     showFootnote.style.color = "transparent"
 }
 

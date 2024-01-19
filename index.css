@@ -14,6 +14,7 @@ header, footer {
 }
 
 footer {
+    position: absolute;
     bottom: 0;
 }
 
@@ -49,6 +50,11 @@ a {
 
 .items > a {
     font-size: 3em;
+}
+
+.mobile-view-text {
+    visibility: hidden;
+    font-size: 18px;
 }
 
 #p4 {
@@ -94,6 +100,10 @@ a {
     section {
 
     }
+
+    #p4 {
+        color: whitesmoke;
+    }
     
     .main-section {
         margin: 0 50px;
@@ -101,19 +111,24 @@ a {
         width: auto;
     }
 
+    .mobile-view-text {
+        color: gray;
+        font-size: 18px;
+    }
+
     .about-me {
-        display: flex;
         margin: 0px 50px;
         padding: 0;
         width: auto;
     }
 
-    #show-main {
-        visibility: hidden;
+    header {
+        position: relative;
     }
 
-    header, footer {
-        position: relative;
+    footer {
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -134,14 +149,9 @@ a {
     }
 
     .about-me {
-        display: flex;
         margin: 0px 50px;
         padding: 0;
         width: auto;
-    }
-
-    #show-main {
-        visibility: hidden;
     }
 
     header, footer {
