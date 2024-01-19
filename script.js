@@ -47,4 +47,12 @@ function showMore() {
 function backToMain() {
     mainShow.style.display = "flex"
     aboutMeSection.style.display = "none"
+    const footer = document.querySelector('footer')
+    footer.style.position = "absolute"
 }
+
+showAboutMe.addEventListener("click", function() {
+    const footer = document.querySelector('footer')
+    footer.style.position = "relative"
+})
+
