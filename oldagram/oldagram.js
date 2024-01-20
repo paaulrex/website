@@ -1,5 +1,14 @@
 const posts = [
     {
+        name: "Albert Einstein",
+        username: "e.mc2",
+        location: "Princeton, New Jersey, USA",
+        avatar: "/oldagram/img/avatar-einstein.jpg",
+        post: "/oldagram/img/post-einstein.jpg",
+        comment: "feelin silly turning 72",
+        likes: 532
+    },
+    {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
