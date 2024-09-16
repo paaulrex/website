@@ -1,16 +1,20 @@
 
-let cards = []
+let playerCards = []
+let dealerCards = []
 let sum = 0
+let dSum = 0
 let hasBlackJack = false
 let isAlive = false
 let player = {
-    name: "Paul",
+    name: "Player",
     chips: 150
 }
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.querySelector("#cards-el")
+let messageEl = document.getElementById("message")
+let sumEl = document.getElementById("sum")
+let cardsEl = document.querySelector("#player-cards")
 let playerEl = document.querySelector("#player-el")
+let dealerEl = document.querySelector("#dealer-cards")
+
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
@@ -29,8 +33,12 @@ function startGame() {
     hasBlackJack = false
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
-    cards = [firstCard, secondCard]
+    let dFirstCard = getRandomCard()
+    let dSecondCard = getRandomCard()
+    playerCards = [firstCard, secondCard]
+    dealerCards = [dFirstCard, dSecondCard]
     sum = firstCard + secondCard
+    dSum = dFirstCard + dSecondCard
     player.chips -= 10
     playerEl.textContent = player.name + ": $" + player.chips
     renderGame()
@@ -38,10 +46,17 @@ function startGame() {
 
 function renderGame() {
     cardsEl.textContent = "Cards: "
-    for (let i = 0; i < cards.length; i++) {
-        cardsEl.textContent += cards[i] + " "
+    dealerEl.textContent = "Dealer: "
+    for (let i = 0; i < playerCards.length; i++) {
+        cardsEl.textContent += playerCards[i] + " "
     }
+    dealerEl.textContent += " ?? " + dealerCards[1]
     sumEl.textContent = "Sum " + sum
+
+    if (dealerCards[0] + dealerCards [1] === 21) {
+        messageEl.textContent = "Player BUST"
+    }
+
     if (sum < 21) {
         message = "Hit/Pass?"
     } else if (sum === 21) {
@@ -49,6 +64,8 @@ function renderGame() {
         hasBlackJack = true
         player.chips += 50
         playerEl.textContent = player.name + ": $" + player.chips
+        isAlive = false
+        revealDealer()
     } else {
         message = "Wow, you suck!"
         isAlive = false
@@ -56,11 +73,43 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-function newCard() {
+function hitCard() {
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
-        cards.push(card)
+        playerCards.push(card)
         sum += card
         renderGame()
+    }
+}
+
+function revealDealer() {
+    dealerEl.textContent = "Dealer: " + dealerCards[0] + " " + dealerCards[1]
+    if (dSum < 17) {
+        let dCard = getRandomCard()
+        dealerCards.push(dCard)
+        dSum += dCard   
+        if (dSum > 21) {
+            message = "Dealer BUST!"
+            player.chips += 20
+            playerEl.textContent = player.name + ": $" + player.chips
+        }
+    } if (dSum === 21 && sum === 21 || dSum === sum) {
+        message = "Push!"
+        player.chips += 10
+
+    } else if (dSum < sum) {
+        message = "Nice!"
+        player.chips += 20
+        playerEl.textContent = player.name + ": $" + player.chips
+    } else if (dSum > sum) {
+        message = "Player LOSE!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+function standCard() {
+    if (isAlive === true ) {
+        revealDealer()
     }
 }
