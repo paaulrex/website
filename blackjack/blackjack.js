@@ -51,7 +51,7 @@ function renderGame() {
         cardsEl.textContent += playerCards[i] + " "
     }
     dealerEl.textContent += " ?? " + dealerCards[1]
-    sumEl.textContent = "Sum " + sum
+    sumEl.textContent = "Result " + sum + " (You) | ?? + " + dealerCards[1] + " (Dealer)"
 
     if (dealerCards[0] + dealerCards [1] === 21) {
         messageEl.textContent = "Player BUST"
@@ -83,33 +83,29 @@ function hitCard() {
 }
 
 function revealDealer() {
-    dealerEl.textContent = "Dealer: " + dealerCards[0] + " " + dealerCards[1]
-    if (dSum < 17) {
-        let dCard = getRandomCard()
-        dealerCards.push(dCard)
-        dSum += dCard   
-        if (dSum > 21) {
-            message = "Dealer BUST!"
-            player.chips += 20
-            playerEl.textContent = player.name + ": $" + player.chips
-        }
-    } if (dSum === 21 && sum === 21 || dSum === sum) {
-        message = "Push!"
-        player.chips += 10
-
-    } else if (dSum < sum) {
-        message = "Nice!"
-        player.chips += 20
-        playerEl.textContent = player.name + ": $" + player.chips
-    } else if (dSum > sum) {
-        message = "Player LOSE!"
-        isAlive = false
+    dealerEl.textContent = "Dealer: "
+    for (let i = 0; i < dealerCards.length; i++) {
+        dealerEl.textContent += dealerCards[i] + " "
     }
+    sumEl.textContent = "Result " + sum + " (You) | " + dSum + " (Dealer)"
+    if (dSum == sum) {
+        message = "PUSH!"
+        player.chips += 10
+    } else if (dSum < sum) {
+        message = "You WON!"
+        player.chips += 20
+        if (dSum < 17) {
+            let dCard = getRandomCard()
+            dealerCards.push(dCard)
+            dSum += dCard
+        }
+    }
+    playerEl.textContent = player.name + ": $" + player.chips
     messageEl.textContent = message
 }
 
 function standCard() {
-    if (isAlive === true ) {
+    if (isAlive === true) {
         revealDealer()
     }
 }
