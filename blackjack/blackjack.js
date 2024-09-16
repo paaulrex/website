@@ -99,6 +99,9 @@ function revealDealer() {
             dealerCards.push(dCard)
             dSum += dCard
         }
+    } else {
+        message = "Sorry Bud!"
+        isAlive = false
     }
     playerEl.textContent = player.name + ": $" + player.chips
     messageEl.textContent = message
