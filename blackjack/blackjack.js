@@ -91,6 +91,7 @@ function revealDealer() {
     if (dSum == sum) {
         message = "PUSH!"
         player.chips += 10
+        isAlive = false
     } else if (dSum < sum) {
         message = "You WON!"
         player.chips += 20
