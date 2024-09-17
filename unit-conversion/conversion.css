@@ -130,6 +130,13 @@ p {
     gap: 30px;
 }
 
+button {
+    background-color: #273549;
+    border: 1px solid #696969;
+    color: #fff;
+    border-radius: 0px;
+}
+
 /* Nav CSS stop */
 
 /* Template for later use, if I decide to reuse ul/li for dropdown
