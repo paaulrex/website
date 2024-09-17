@@ -92,7 +92,7 @@ function foulHome() {
     }
     if (homeFoul > 4) {
         homeFoul = 4
-        alert(`You can't add anymore fouls`)
+        alert(`You can't add anymore fouls for this quarter!`)
     }
 }
 
@@ -114,6 +114,6 @@ function foulAway() {
     }
     if (awayFoul > 4) {
         awayFoul = 4
-        alert(`You can't add anymore fouls`)
+        alert(`You can't add anymore fouls for this quarter!`)
     }
 }
